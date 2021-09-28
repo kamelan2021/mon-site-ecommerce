@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="asset/style.css">
+    <title>ThomShop</title>
+</head>
+<body>
+    <div class="container-fluid px-0 ">
+        <!--Lieu de recherche de tout les article-->
+        <header class="first_header py-2 ">
+            <div class="ms-4">
+                <img id="logo" src="image/logo.png" alt="le logo de mon site">
+            </div>
+
+            <form action="" method="get">
+                <input class="search" type="search" name="search" placeholder="search article" />
+            </form>
+
+            <div class="logo-shoping">
+                <a href="#"><img class="me-4" src="icones/shopping-basket-line.png" alt="logo de panier"></a>
+            </div>
+        </header>
+        <!--barre de navigation -->
+        <ul class="nav second-header justify-content-center ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catégories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="html/produit.html">Enfants</a></li>
+                  <li><a class="dropdown-item" href="html/produit.html">Jeunes</a></li>
+                  <li><a class="dropdown-item" href="html/produit.html">Vieux</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" class="" href="html/produit.html">accessoires</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Livraison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" >Contacts</a>
+            </li>
+        </ul>
+        <!--article du jour en promotion-->
+        <div class="row promotion py-4 ">
+          <div class="col ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators primary">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner bg-secondary">
+                <div class="carousel-item active">
+                  <a href="produit.html"><img src="image/th.jfif" class="d-block   m-auto" alt="image d'un teeshirt"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="produit.html"><img src="image/OIF (1).jfif" class="d-block  m-auto" alt="image de teeshirt feminin"></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="produit.html"><img src="image/OIP (4).jfif" class="d-block  m-auto " alt="image d'un veste"></a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col row align-items-center mx-2">
+            <p class="h3">Promotion du jour</p>
+            <p class="fs-4 text-light">Aujourd'hui est un jour spécial. <br> Une réduction exceptionnelle de  
+              <span class="taux "> -60%</span> <br>
+              Profitez en même temps! <br> Ne restez pas en marge de cette offre. <br> 
+              <span class="souhait text-uppercase fw-bold">Bon achat!!!</span>
+            </p>
+            <a class="link-item " href="html/produit.html"><button type="button" class=" text-light fw-bolder btn btn-outline-success">Découvrir</button></a>
+          </div>
+        </div>
+        <!--les indications-->
+        <div class="row py-4 bg-light">
+          <div class="col">
+            <h1 class="text-center">les articles</h1>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="html/produit.html" title="Clicquez pour les détails"><img src="image/OIF (2).jfif"  width="200px" class="d-block  m-auto" alt="culotte">
+                    <div class="carousel-caption  d-md-block ">
+                      <h5 class="text-dark">Article de qualités</h5>
+                      <p class="text-dark">Nos produits sont de bonne qualité avec de bon prix</p>
+                      <p class="text-dark">Cliquez-dessus pour voir les détails</p>
+                    </div>
+                </a>
+                </div>
+
+                <div class="carousel-item w-100">
+                  <a href="html/produit.html" title="Clicquez pour les détails"><img src="image/OIF.jfif"  width="200px" class= "m-auto d-block " alt="teeshirt">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="text-dark">Article de qualités</h5>
+                      <p class="text-dark">Nos produits sont de bonne qualité avec de bon prix</p>
+                      <p class="text-dark">Cliquez-dessus pour voir les détails</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="html/produit.html" title="Clicquez pour les détails"><img src="image/OIP (17).jfif"  width="200px" class="d-block m-auto" alt="sac des femme">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="text-dark">Article de qualités</h5>
+                      <p class="text-primary">Nos produits sont de bonne qualité avec de bon prix</p>
+                      <p class="text-info">Cliquez-dessus pour voir les détails</p>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col livraison">
+            <h1>Méthode de livraison</h1>
+            <p class="text-secondary ">
+              Livraison gratuite sans aucun frais. <br>
+              Commandez, achetez seulement <br>
+              Et dites -nous où vous êtes. <br>
+              Peut importe la planète. <br>
+              <img src="image/logo.png" width="200px" alt="avion">
+            </p>
+          </div>
+          <div class="col iframe-div">
+            <h1>Publicité</h1>
+            <iframe class="video-iframe"  width="560" height="315" src="https://www.youtube.com/embed/7Rt3Df0M1tI" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <!--les réseaux sociaux-->
+        
+        
+    </div>
+    <footer>
+      <div class="row ">
+        <p class="fs-4 fst-italic fw-bold text-center text-light bg-dark py-4">
+          Retrouvez nous encore sur : 
+          <a href="https:www.twitter.com"><img class="mx-4" src="icones/twitter-logo-24.png" alt="logo de twitter"></a>
+          <a href="https:www.facebook.com"><img class="mx-4" src="icones/facebook-circle-logo-24.png" alt="logo de facebook"></a>
+          <a href="https:www.whatsapp.com"><img class="mx-4" src="icones/whatsapp-logo-24.png" alt="logo de whatsapp"></a>
+        </p>
+      </div>
+    </footer>
+    <script src="asset/bootstrap.bundle.min.js">
+
+    </script>
+</body>
+</html>

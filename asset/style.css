@@ -1,0 +1,135 @@
+
+.first_header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#logo{
+    width: 30px;
+}
+.search{
+    padding: 5px;
+    border-radius: 40px;
+    outline: none;
+    border: 3px solid #4ccfc1;
+    width: 50px; 
+    padding-left: 10px;
+    background: url('../image/search.png') no-repeat right;
+    background-size: 40px;
+    transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+
+}
+.search:focus{
+    width: 200px;
+}
+.second-header{
+    background-color: #4ccfc1;
+}
+.nav-link{
+    font-weight: bolder;
+    color: #FFF;
+}
+.nav-link:hover,
+.nav-link:active{
+    color: rgb(252, 5, 198);
+}
+.promotion{
+    background-color: #3fc5b7;
+}
+.taux{
+    font-size: 30px;
+    color: blue;
+}
+.souhait{
+    font-size: 25px;
+    color: rgb(17, 16, 16);
+
+}
+/*responsivité de la prémière page */
+@media(max-width:1000px){
+    body{
+        padding: 4px;
+        margin-bottom: 5px;
+    }
+    #logo{
+        margin-left: -10px;
+    }
+    .iframe-div{
+        max-width: 100%;
+    }
+    .video-iframe{
+        max-width: 100%;
+    }
+    .livraison{
+        margin: auto;
+    }
+}
+/* responsivité de la deuxième page */
+@media(max-width:1100px){
+    
+    .enfant, .jeunes, .vieux{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .chaussures, .habits, .culottes{
+        width: 50%;
+        margin: auto;
+        padding: 5px;
+    }
+    .image, .text{
+        max-width: 100%;
+    }
+}
+
+@media(max-width:440px){
+    .chaussures, .habits, .culottes{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 5px;
+        
+    }
+    h3, p{
+        text-align: center;
+    }
+    
+}
+
+/* style appliquée aux élément de ma page produit.html */
+
+.enfant, .jeunes, .vieux{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+/* .image img:hover{
+    height: 150px;
+    width: 150px;
+    transition: 1.5s;
+} */
+.enfant h3{
+    color: grey;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.last-price{
+    text-decoration: line-through;
+}
+.recent-price{
+    font-weight: bold;
+    text-decoration: overline green;
+}
+.chaussures, .habits, .culottes{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    width: 50%;
+    padding: 5px 0;
+}
