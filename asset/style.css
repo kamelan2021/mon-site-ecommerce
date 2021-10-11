@@ -128,8 +128,12 @@
 }
 .chaussures, .habits, .culottes{
     display: flex;
-    /* border: 1px solid red; */
+    margin: 10px;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+    box-shadow: 4px 4px 8px gray inset;
+    /* border: 1px solid red;  */
     justify-content: space-around;
-    width: 50%;
-    padding: 5px 0;
+    width: 100%;
+    padding: 5px ;
 }
